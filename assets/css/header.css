@@ -21,3 +21,13 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.menu-lista{
+    display: none;
+}
+
+.menu-checkbox:checked ~ .menu-lista{
+    display: block;
+}
+
+
