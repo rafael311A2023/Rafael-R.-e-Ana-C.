@@ -24,6 +24,8 @@ body{
 
 .menu-lista{
     display: none;
+    position: absolute;
+    width: 60vw;
 }
 
 .menu-checkbox:checked ~ .menu-lista{
@@ -35,3 +37,7 @@ body{
     background-color: white;
 }
 
+.lista-titulo{
+    background-color: var(--branco);
+    color: var(--laranja);
+}
