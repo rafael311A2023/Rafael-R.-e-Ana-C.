@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,43 +10,43 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
-<body>
-         <header class="cabecalho">
-    <div class="container">
-             <input type="checkbox" id="menu" class="menu-checkbox">
-             <label for="menu">
-             <span class="menu-hamburguer"></span> 
-            </label>
-       
-              <img src="assets/img/AluraBooks/Logo.svg" alt="AluraBooks" class="logo-alurabookd">
 
-              <ul class="menu-lista">
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="menu-checkbox">
+            <label for="menu">
+                <span class="menu-hamburguer"></span>
+            </label>
+
+            <img src="assets/img/AluraBooks/Logo.svg" alt="AluraBooks" class="logo-alurabookd">
+
+            <ul class="menu-lista">
                 <li class="lista-titulo">CATEGORIAS</li>
                 <li class="lista-item"> <a href="#">Românce</a> </li>
                 <li class="lista-item"> <a href="#">Ficção</a> </li>
                 <li class="lista-item"> <a href="#">Distopia</a> </li>
-                <li class="lista-item"> <a href="#">Terror</a>  </li>
+                <li class="lista-item"> <a href="#">Terror</a> </li>
                 <li class="lista-item"> <a href="#">Comédia</a> </li>
                 <li class="lista-item"> <a href="#">Ação</a> </li>
                 </li>
             </ul>
-    </div>
+        </div>
         <div class="container">
-             <a href="#"><img src="assets/img/AluraBooks/Usuário.svg" alt=""></a>
-             <a href="#"><img src="assets/img/AluraBooks/Compras.svg" alt=""></a>
-              <a href="#"><img src="assets/img/AluraBooks/Favoritos.svg" alt=""></a>
-         </div>
-   
-   
+            <a href="#"><img src="assets/img/AluraBooks/Usuário.svg" alt=""></a>
+            <a href="#"><img src="assets/img/AluraBooks/Compras.svg" alt=""></a>
+            <a href="#"><img src="assets/img/AluraBooks/Favoritos.svg" alt=""></a>
+        </div>
+
+
     </header>
     <section class="banner">
         <h2 class="banner-titulo">
@@ -54,10 +55,9 @@
         <p class="banner-texto">
             Encontre em nossa estante o que precisa para seu desenvolvimento
         </p>
-        <input class="banner-pesquisa" type="search"
-        placeholder="Qual será sua próxima leitura?">
+        <input class="banner-pesquisa" type="search" placeholder="Qual será sua próxima leitura?">
     </section>
-        <section class="carrossel">
+    <section class="carrossel">
         <h2 class="carrossel-titulo">
             Novos Lançamentos
         </h2>
@@ -73,21 +73,38 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
+        <div class="card">
+            <div class="card-descricao">
+                <div class="descricao">
+                    <h3 class="descricao-titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descricao-titulo-livro">Angular 11 e Firebase</h2>
+                    <h1 class="descricao-titulo-texto">Construindo uma aplicação integrada com a plataforma do Google
+                    </h1>
+                </div>
+                <img src="assets/img/AluraBooks/Angular.png" alt="">
+            </div>
+            <div class="card-botoes">
 
-        </section>
-
-                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-            const swiper = new Swiper('.swiper', {
-  spaceBetween: 10,
-  slidesPerView: 3,
-  pagination:{
-    el:"swiper-pagination",
-    type: "bullets",
-  }
-             });
-</script>
+                <div class="botoes">
+                    <div class="botoes-item"><img src="assets/img/AluraBooks/Favoritos.svg" alt=""></div>
+                    <div class="botoes-item"><img src="assets/img/AluraBooks/Compras.svg" alt=""></div>
+                </div>
+                <a href="#" class="botao-ancora">Saiba mais!</a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: "swiper-pagination",
+                type: "bullets",
+            }
+        });
+    </script>
 
 </body>
 
-</html>             
+</html>
